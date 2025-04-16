@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Kit Example</title>
+    <link rel="stylesheet" href="../dist/style.css" />
+    <script src="../dist/my-ui-kit-web.js"></script>
+    <style>
+      /* m-button {
+        --button-bg: red;
+        --button-color: white;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>Custom tag</h2>
+    <m-button class="btn-top">Кнопка</m-button>
+
+    <h2>CSS class</h2>
+    <button class="btn-general">Другая кнопка</button>
+    <script>
+      const buttonBgColor = 'red';
+      const buttonTextColor = 'white';
+      const buttonHoverColor = 'pink';
+
+      const mButton = document.querySelector('.btn-top');
+
+      mButton.style.setProperty('--button-bg', buttonBgColor);
+      mButton.style.setProperty('--button-color', buttonTextColor);
+      mButton.style.setProperty('--button-hover', buttonHoverColor);
+    </script>
+  </body>
+</html>

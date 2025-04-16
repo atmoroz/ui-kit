@@ -1,0 +1,11 @@
+.btn-general {
+  padding: 10px 20px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-general:hover {
+  background-color: darkblue;
+}
